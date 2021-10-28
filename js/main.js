@@ -18,6 +18,6 @@ window.onscroll = function () {
     scrollFunction()
 };
 
-btn2.addEventListener('click', function(){
+btn2.addEventListener('click', function () {
     document.body.classList.toggle('dark');
 })

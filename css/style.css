@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.dark {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #202124;
+}
+
+.dark a,
+.dark .text-blueviolet,
+.dark h2 {
+    color: rgb(178, 97, 253) !important;
+}
+
+.dark #toTop {
+    background-color: rgb(178, 97, 253);
+}
+
+.dark .card {
+    background-color: #343A40;
+}
+
+.dark .card-title {
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+
+.dark .card-text,
+footer {
+    color: rgba(255, 255, 255, 0.50) !important;
 }
 
 .text-blueviolet,
@@ -8,8 +42,11 @@ h2 {
     color: blueviolet !important;
 }
 
-a:hover {
+a {
     transition: all .5s ease;
+}
+
+a:hover {
     color: gainsboro !important;
 }
 
@@ -72,27 +109,26 @@ a:hover {
     opacity: 1 !important;
 }
 
-.dark {
-    color: #fff;
-    background-color: #121212;
-}
-
 @media (max-width: 575px) {
     #toTop {
         bottom: 20px;
         right: 20px;
     }
+
+    .card {
+        margin: 1.5em !important;
+    }
 }
 
 @media (min-width: 992px) {
     nav div a {
-        padding: 0 15px!important;
+        padding: 0 15px !important;
     }
 
     #uvod,
     #projekty,
     #kontakt {
-        padding: 2em 12em 2em 12em;
+        padding: 2em 8em 2em 8em;
     }
 
     #projekty h3 {
@@ -110,7 +146,7 @@ a:hover {
     }
 }
 
-@media (max-width: 373px){
+@media (max-width: 385px) {
     .sm-none {
         display: none;
     }
