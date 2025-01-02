@@ -8,32 +8,21 @@ html {
     scroll-behavior: smooth;
 }
 
-.dark {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #212124;
+body {
+    position: relative;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.dark a,
-.dark .text-blueviolet,
-.dark h2 {
-    color: rgb(178, 97, 253) !important;
+.nav>a {
+    font-size: large;
 }
 
-.dark #toTop {
-    background-color: rgb(178, 97, 253);
-}
-
-.dark .card {
-    background-color: #343A40;
-}
-
-.dark .card-title {
-    color: rgba(255, 255, 255, 0.87) !important;
-}
-
-.dark .card-text,
 footer {
     color: rgba(255, 255, 255, 0.50) !important;
+    background-color: #212124 !important;
 }
 
 .text-blueviolet,
@@ -48,10 +37,6 @@ a {
 
 a:hover {
     color: gainsboro !important;
-}
-
-#darkToggle:hover {
-    cursor: pointer;
 }
 
 #toTop:hover {
@@ -69,10 +54,11 @@ a:hover {
     transition: all .5s ease;
     background-color: blueviolet;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     border: none;
     box-shadow: 0px 8px 15px rgba(138, 43, 226, 0.2);
     outline: none;
+    padding: 0.75em 1em;
 }
 
 .card {
@@ -116,11 +102,12 @@ a:hover {
     }
 }
 
-@media (min-width: 992px) {
-    #about p {
-        font-size: larger;
-    }
+#about p,
+#contact p {
+    font-size: larger;
+}
 
+@media (min-width: 992px) {
     nav div a {
         padding: 0 15px !important;
     }
@@ -136,7 +123,7 @@ a:hover {
     }
 
     #projects #druhyRocnik h3,
-    #projects #tretiRocnik h3{
+    #projects #tretiRocnik h3 {
         padding: 40px 0 20px 0;
     }
 }
@@ -147,7 +134,7 @@ a:hover {
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 575px) {
     .sm-none {
         display: none;
     }
