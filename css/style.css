@@ -117,7 +117,7 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-    #uvod p {
+    #about p {
         font-size: larger;
     }
 
@@ -125,18 +125,18 @@ a:hover {
         padding: 0 15px !important;
     }
 
-    #uvod,
-    #projekty,
-    #kontakt {
+    #about,
+    #projects,
+    #contact {
         padding: 2em 8em 2em 8em;
     }
 
-    #projekty h3 {
+    #projects h3 {
         padding: 0 0 20px 0;
     }
 
-    #projekty #druhyRocnik h3,
-    #projekty #tretiRocnik h3{
+    #projects #druhyRocnik h3,
+    #projects #tretiRocnik h3{
         padding: 40px 0 20px 0;
     }
 }
@@ -151,4 +151,8 @@ a:hover {
     .sm-none {
         display: none;
     }
+}
+
+h3 {
+    font-size: x-large;
 }
