@@ -1,6 +1,2 @@
-# Profil
-Webové stránky o mně.
-## Obsah: 
-* Úvod
-* Projekty
-* Kontakt
+# Portfolio
+Website showcasing my work.
