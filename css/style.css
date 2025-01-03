@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-* {
-    font-family: 'Inter', sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     position: relative;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,15 +17,23 @@ body {
     font-size: large;
 }
 
-footer {
-    color: rgba(255, 255, 255, 0.50) !important;
-    background-color: #212124 !important;
+.navbar-brand {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+#about p,
+#contact p {
+    font-size: larger;
 }
 
 .text-blueviolet,
 a,
 h2 {
-    color: blueviolet !important;
+    color: rgb(120, 53, 243) !important;
 }
 
 a {
@@ -36,11 +41,7 @@ a {
 }
 
 a:hover {
-    color: gainsboro !important;
-}
-
-#toTop:hover {
-    background-color: gainsboro !important;
+    color: #5224a6 !important;
 }
 
 #toTop {
@@ -52,19 +53,29 @@ a:hover {
     right: 30px;
     z-index: 99;
     transition: all .5s ease;
-    background-color: blueviolet;
+    background-color: rgb(120, 53, 243);
     color: white;
     font-size: 14px;
     border: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px rgba(82, 36, 166, 0.2);
     outline: none;
     padding: 0.75em 1em;
+}
+
+#toTop:hover {
+    background-color: #5224a6 !important;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
 }
 
 .card {
     border-radius: 15px;
     border: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 15px rgba(82, 36, 166, 0.2);
 }
 
 .card-text {
@@ -80,10 +91,9 @@ a:hover {
     border-top-right-radius: 15px;
 }
 
-.btn:focus,
-.btn:active {
-    outline: none !important;
-    box-shadow: none;
+footer {
+    color: rgba(255, 255, 255, 0.50) !important;
+    background-color: #1b1b1d !important;
 }
 
 .visible {
@@ -91,22 +101,39 @@ a:hover {
     opacity: 1 !important;
 }
 
-@media (max-width: 575px) {
+/* Mobile */
+@media (max-width: 767px) {
+    .sm-none {
+        display: none;
+    }
+
     #toTop {
         bottom: 20px;
         right: 20px;
     }
+}
 
+/* Tablet */
+@media (max-width: 991px) {
     .card {
-        margin: 1.5em !important;
+        margin: 1.5em 0 1.5em 0;
+    }
+
+    #projects h2,
+    #contact h2 {
+        padding-top: 1em;
+    }
+
+    #contact {
+        padding-bottom: 2em;
+    }
+
+    #projects h3 {
+        padding-top: 1em;
     }
 }
 
-#about p,
-#contact p {
-    font-size: larger;
-}
-
+/* PC */
 @media (min-width: 992px) {
     nav div a {
         padding: 0 15px !important;
@@ -122,24 +149,7 @@ a:hover {
         padding: 0 0 20px 0;
     }
 
-    #projects #druhyRocnik h3,
-    #projects #tretiRocnik h3 {
+    #projects #academic h3 {
         padding: 40px 0 20px 0;
     }
-}
-
-@media (max-width: 991px) {
-    .card {
-        margin: 1.5em 0 1.5em 0;
-    }
-}
-
-@media (max-width: 575px) {
-    .sm-none {
-        display: none;
-    }
-}
-
-h3 {
-    font-size: x-large;
 }

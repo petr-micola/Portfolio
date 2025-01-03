@@ -1,5 +1,4 @@
 const btn = document.getElementById('toTop');
-const btn2 = document.getElementById('darkToggle');
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -17,7 +16,3 @@ btn.addEventListener('click', function () {
 window.onscroll = function () {
     scrollFunction()
 };
-
-btn2.addEventListener('click', function () {
-    document.body.classList.toggle('dark');
-})
