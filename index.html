@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petr Mičola - Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-neutral-950">
+    <div
+        class="flex fixed left-0 lg:top-1/2 lg:-translate-y-1/2 text-neutral-100 font-light text-xl justify-between items-center z-10">
+        <div class="flex flex-col backdrop-blur-sm rounded-xl p-10 space-y-2">
+            <a class="cursor-pointer" onclick="switchLanguage('en')">
+                <img src="img/gb.png" class="w-9">
+            </a>
+            <a class="cursor-pointer" onclick="switchLanguage('cz')">
+                <img src="img/cz.png" class="w-9">
+            </a>
+        </div>
+    </div>
+
+    <div
+        class="flex fixed right-0 lg:top-1/2 lg:-translate-y-1/2 text-neutral-100 font-light text-xl justify-between items-center z-10">
+        <div class="flex flex-col text-right backdrop-blur-sm rounded-xl p-10 space-y-2">
+            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+                <a id="link_about" href="#about">About</a>
+            </div>
+            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+                <a id="link_projects" href="#projects">Projects</a>
+            </div>
+            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+                <a id="link_contact" href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="flex fixed text-neutral-100 font-light text-xl justify-end items-end right-5 lg:right-10 bottom-5 lg:bottom-10 z-10 backdrop-blur-sm rounded-md">
+        <div id="backToTop" class="hidden cursor-pointer px-4 py-2 rounded-md text-teal-400 text-2xl">↑</div>
+    </div>
+
+    <div id="about">
+        <div class="h-[25vh]"></div>
+        <div
+            class="h-[50vh] flex justify-center items-center flex-col bg-[url('./img/background.png')] bg-cover bg-center">
+            <div class="drop-shadow-animated h-full justify-center items-center flex flex-col">
+                <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent">
+                    <h1 class="text-6xl text-center font-bold">Petr Mičola</h1>
+                </div>
+                <p id="subtitle" class="text-neutral-100 text-center text-xl font-light opacity-80">Website developer
+                </p>
+                <p class="text-neutral-100 text-center text-xl font-light opacity-80">WordPress, Shopify, HTML, CSS, JS
+                    🚀
+                </p>
+            </div>
+            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-3xl">
+                <h3 id="projects_title" class="text-center font-bold">Projects</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="flex flex-col space-y-10 lg:space-y-0">
+        <div class="flex lg:hidden justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-48 mt-10" src="img/line_0.png">
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-96 mt-10" src="img/line_1.png">
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+            <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
+                <a href="https://rqpower.cz/" target="_blank">
+                    <img src="./img/rqpower_logo.png">
+                </a>
+                <p id="rqpower_description" class="text-neutral-100 text-xl font-light opacity-80">Photovoltaic company
+                    website 🔋</p>
+            </div>
+            <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-end items-center lg:items-end">
+                <a href="https://rqpower.cz/" target="_blank">
+                    <img src="./img/rqpower.png" class="w-full floating-img">
+                </a>
+                <div class="flex justify-center items-center mr-0 lg:mr-18">
+                    <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
+                    <img src="./img/wordpress.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:hidden justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-48 mt-10" src="img/line_0.png">
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-center items-center">
+            <div>
+                <img class="h-96" src="img/line_2.png">
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row-reverse justify-center items-center">
+            <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
+                <a href="https://tevalipno.cz/" target="_blank">
+                    <img src="./img/tevalipno_logo.png">
+                </a>
+                <p id="tevalipno_description" class="text-neutral-100 text-xl font-light opacity-80">Accomodation
+                    booking website 🏠</p>
+            </div>
+            <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                <a href="https://tevalipno.cz/" target="_blank">
+                    <img src="./img/tevalipno.png" class="w-full floating-img">
+                </a>
+                <div class="flex justify-center items-center ml-0 lg:ml-18">
+                    <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
+                    <img src="./img/wordpress.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:hidden justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-48 mt-10" src="img/line_0.png">
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-center items-center">
+            <div>
+                <img class="h-96" src="img/line_3.png">
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center items-center">
+            <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
+                <a href="https://slamculture.com/" target="_blank">
+                    <img src="./img/slamculture_logo.png">
+                </a>
+                <p id="slamculture_description" class="text-neutral-100 text-xl font-light opacity-80">Clothing brand
+                    e-shop 👕</p>
+            </div>
+            <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-end items-center lg:items-end">
+                <a href="https://slamculture.com/" target="_blank">
+                    <img src="./img/slamculture.png" class="w-full floating-img">
+                </a>
+                <div class="flex justify-center items-center mr-0 lg:mr-18">
+                    <p class="built_in text-neutral-100 opacity-80 mr-3 mt-[3px]">Built in</p>
+                    <img src="./img/shopify.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:hidden justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-48 mt-10" src="img/line_0.png">
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-end items-center">
+            <div class="w-[50%]">
+                <img class="h-96 mb-10" src="img/line_4.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="flex justify-center items-center flex-col pb-20">
+        <div class="drop-shadow-main flex justify-center items-center flex-col space-y-5">
+            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-3xl">
+                <h3 id="contact_title" class="text-center font-bold">Contact</h3>
+            </div>
+            <p id="contact_description" class="text-neutral-100 text-center text-xl font-light opacity-80 px-10">
+                Interested in working with me?
+                Feel
+                free
+                to reach out 📝</p>
+            <form id="contactForm" action="https://formspree.io/f/xeoelyye" method="POST" class="w-md lg:w-3xl mt-2">
+                <div class="flex flex-col lg:flex-row justify-center items-center w-full">
+                    <input type="text" id="name" name="name" required placeholder="Name"
+                        class="w-full p-3 pl-5 border-2 rounded-md border-teal-400 text-neutral-100 text-xl font-light m-2 transition-colors duration-400 ease-in-out">
+                    <input type="email" id="email" name="email" required placeholder="E-mail"
+                        class="w-full p-3 pl-5 border-2 rounded-md border-teal-400 text-neutral-100 text-xl font-light m-2 transition-colors duration-400 ease-in-out">
+                </div>
+                <div class="flex flex-col lg:flex-row justify-center items-center w-full">
+                    <textarea id="message" name="message" required placeholder="Message"
+                        class="w-full p-3 pl-5 border-2 rounded-md border-teal-400 text-neutral-100 text-xl font-light m-2 min-h-60 transition-colors duration-400 ease-in-out"></textarea>
+                </div>
+                <button type="submit"
+                    class="hover:bg-teal-400 text-neutral-100 hover:text-neutral-950 cursor-pointer p-3 w-44 border-2 rounded-md border-teal-400 my-2 lg:m-2 float-end transition-colors duration-400 ease-in-out">
+                    <span id="btn" class="text-center text-xl font-light opacity-80">Send</span>
+                </button>
+            </form>
+            <div id="thankYouMessage"
+                class="hidden mt-4 p-4 border-2 border-teal-400 rounded-md bg-teal-600 text-white text-xl text-center">
+                ✅ Thanks for your message! I'll get back to you soon.
+            </div>
+        </div>
+    </div>
+
+    <div class="p-10">
+        <p class="text-neutral-100 text-center text-xl font-light opacity-80">
+            <span class="text-teal-400">&copy;</span> 2025
+            <span id="copyright" class="clickable-name">Petr Mičola</span><span class="text-teal-400">.</span> <span
+                id="rights-reserved">All
+                rights reserved</span><span class="text-teal-400">.</span>
+        </p>
+    </div>
+
+
+    <script>
+        const backToTop = document.getElementById("backToTop");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        });
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const nameElement = document.querySelector(".clickable-name");
+
+            nameElement.addEventListener("click", function () {
+                this.classList.add("clicked");
+
+                setTimeout(() => {
+                    this.classList.remove("clicked");
+                }, 600);
+            });
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const form = this;
+            const formData = new FormData(form);
+
+            const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+                headers: { "Accept": "application/json" }
+            });
+
+            if (response.ok) {
+                document.getElementById("thankYouMessage").classList.remove("hidden");
+                form.reset();
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        });
+    </script>
+
+    <script>
+        const translations = {
+            en: {
+                rightsReserved: "All rights reserved",
+                namePlaceholder: "Name",
+                emailPlaceholder: "E-mail",
+                messagePlaceholder: "Message",
+                built_in: "Built in",
+                link_about: "About",
+                link_projects: "Projects",
+                link_contact: "Contact",
+                subtitle: "Website developer",
+                projects_title: "Projects",
+                rqpower_description: "Photovoltaic company website 🔋",
+                tevalipno_description: "Accomodation booking website 🏠",
+                slamculture_description: "Clothing brand e-shop 👕",
+                contact_title: "Contact",
+                contact_description: "Interested in working with me? Feel free to reach out 📝",
+                btn: "Send"
+            },
+            cz: {
+                rightsReserved: "Všechna práva vyhrazena",
+                namePlaceholder: "Jméno",
+                emailPlaceholder: "E-mail",
+                messagePlaceholder: "Zpráva",
+                built_in: "Postaveno na",
+                link_about: "O mně",
+                link_projects: "Projekty",
+                link_contact: "Kontakt",
+                subtitle: "Webový vývojář",
+                projects_title: "Projekty",
+                rqpower_description: "Web pro firmu zabývající se fotovoltaikou 🔋",
+                tevalipno_description: "Web s rezervací ubytování 🏠",
+                slamculture_description: "E-shop pro módní značku 👕",
+                contact_title: "Kontakt",
+                contact_description: "Máte zájem o spolupráci? Neváhejte mě kontaktovat 📝",
+                btn: "Odeslat"
+            }
+        };
+
+        function switchLanguage(lang) {
+            localStorage.setItem("selectedLanguage", lang);
+            updateText(lang);
+        }
+
+        function updateText(lang) {
+            document.getElementById("name").textContent = translations[lang].name;
+            document.getElementById("link_about").textContent = translations[lang].link_about;
+            document.getElementById("link_projects").textContent = translations[lang].link_projects;
+            document.getElementById("link_contact").textContent = translations[lang].link_contact;
+            document.getElementById("subtitle").textContent = translations[lang].subtitle;
+            document.getElementById("projects_title").textContent = translations[lang].projects_title;
+            document.getElementById("rqpower_description").textContent = translations[lang].rqpower_description;
+            document.getElementById("tevalipno_description").textContent = translations[lang].tevalipno_description;
+            document.getElementById("slamculture_description").textContent = translations[lang].slamculture_description;
+            document.getElementById("contact_title").textContent = translations[lang].contact_title;
+            document.getElementById("contact_description").textContent = translations[lang].contact_description;
+            document.getElementById("btn").textContent = translations[lang].btn;
+            document.querySelectorAll('.built_in').forEach(el => el.textContent = translations[lang].built_in);
+            document.getElementById("name").placeholder = translations[lang].namePlaceholder;
+            document.getElementById("email").placeholder = translations[lang].emailPlaceholder;
+            document.getElementById("message").placeholder = translations[lang].messagePlaceholder;
+            document.getElementById("rights-reserved").textContent = translations[lang].rightsReserved;
+        }
+
+        const savedLang = localStorage.getItem("selectedLanguage") || "en";
+        updateText(savedLang);
+    </script>
+</body>
+
+</html>
