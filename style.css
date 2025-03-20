@@ -731,9 +731,6 @@
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);
   }
-  .mr-3 {
-    margin-right: calc(var(--spacing) * 3);
-  }
   .mr-\[-5px\] {
     margin-right: -5px;
   }
@@ -860,9 +857,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -973,14 +967,6 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-0 {
-    --tw-translate-y: calc(var(--spacing) * 0);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-10 {
-    --tw-translate-y: calc(var(--spacing) * 10);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-z-px {
@@ -2076,14 +2062,8 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-0 {
-    opacity: 0%;
-  }
   .opacity-80 {
     opacity: 80%;
-  }
-  .opacity-100 {
-    opacity: 100%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -2230,10 +2210,6 @@
   .duration-400 {
     --tw-duration: 400ms;
     transition-duration: 400ms;
-  }
-  .duration-500 {
-    --tw-duration: 500ms;
-    transition-duration: 500ms;
   }
   .ease-in {
     --tw-ease: var(--ease-in);
