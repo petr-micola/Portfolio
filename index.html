@@ -50,7 +50,7 @@
     <div id="about">
         <div class="h-[25vh]"></div>
         <div
-            class="h-[50vh] flex justify-center items-center flex-col bg-[url('./img/background.png')] bg-cover bg-center">
+            class="h-[50vh] flex justify-center items-center flex-col bg-none md:bg-[url('./img/background.png')] bg-cover bg-center">
             <div class="drop-shadow-animated h-full justify-center items-center flex flex-col">
                 <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent">
                     <h1 class="text-6xl text-center font-bold">Petr Mičola</h1>
@@ -82,7 +82,7 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://rqpower.cz/" target="_blank">
-                    <img src="./img/rqpower_logo.png">
+                    <img src="./img/rqpower-logo.svg">
                 </a>
                 <p id="rqpower_description" class="text-neutral-100 text-xl font-light opacity-80">Photovoltaic company
                     website 🔋</p>
@@ -93,7 +93,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress.png">
+                    <img src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -112,7 +112,7 @@
         <div class="flex flex-col lg:flex-row-reverse justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://tevalipno.cz/" target="_blank">
-                    <img src="./img/tevalipno_logo.png">
+                    <img src="./img/tevalipno-logo.svg">
                 </a>
                 <p id="tevalipno_description" class="text-neutral-100 text-xl font-light opacity-80">Accomodation
                     booking website 🏠</p>
@@ -123,7 +123,7 @@
                 </a>
                 <div class="flex justify-center items-center ml-0 lg:ml-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress.png">
+                    <img src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://gpasolutions.co.uk/" target="_blank">
-                    <img src="./img/gpasolutions_logo.png">
+                    <img src="./img/gpasolutions-logo.svg">
                 </a>
                 <p id="gpasolutions_description" class="text-neutral-100 text-xl font-light opacity-80">Gardening
                     company website 🌱</p>
@@ -153,7 +153,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress.png">
+                    <img src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
         <div class="flex flex-col lg:flex-row-reverse justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://odborysno.cz/" target="_blank">
-                    <img src="./img/odborysno_logo.png">
+                    <img src="./img/odborysno-logo.svg">
                 </a>
                 <p id="odborysno_description" class="text-neutral-100 text-xl font-light opacity-80">Hospital
                     department
@@ -184,7 +184,7 @@
                 </a>
                 <div class="flex justify-center items-center ml-0 lg:ml-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress.png">
+                    <img src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -203,7 +203,7 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://www.hayleyjoneswiresculptures.com/" target="_blank">
-                    <img src="./img/hayleyjones_logo.png">
+                    <img src="./img/hayleyjones-logo.svg">
                 </a>
                 <p id="hayleyjones_description" class="text-neutral-100 text-xl font-light opacity-80">Artist portfolio
                     website 🎨</p>
@@ -214,7 +214,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress.png">
+                    <img src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -241,7 +241,8 @@
                 Feel
                 free
                 to reach out 📝</p>
-            <form id="contactForm" action="https://formspree.io/f/xeoelyye" method="POST" class="w-md lg:w-3xl mt-2">
+            <form id="contactForm" action="https://formspree.io/f/xeoelyye" method="POST"
+                class="w-xs sm:w-md lg:w-3xl mt-2">
                 <div class="flex flex-col lg:flex-row justify-center items-center w-full">
                     <input type="text" id="name" name="name" required placeholder="Name"
                         class="w-full p-3 pl-5 border-2 rounded-md border-teal-400 text-neutral-100 text-xl font-light m-2 transition-colors duration-400 ease-in-out">

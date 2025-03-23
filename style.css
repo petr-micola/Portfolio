@@ -857,6 +857,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -877,6 +880,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .w-sm {
+    width: var(--container-sm);
+  }
+  .w-xs {
+    width: var(--container-xs);
   }
   .max-w-none {
     max-width: none;
@@ -2384,6 +2393,21 @@
       @media (hover: hover) {
         color: var(--color-neutral-950);
       }
+    }
+  }
+  .sm\:w-md {
+    @media (width >= 40rem) {
+      width: var(--container-md);
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
+    }
+  }
+  .md\:bg-\[url\(\'\.\/img\/background\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('./img/background.png');
     }
   }
   .lg\:top-1\/2 {
