@@ -17,26 +17,29 @@
 <body class="bg-neutral-950">
     <div
         class="flex fixed left-0 lg:top-1/2 lg:-translate-y-1/2 text-neutral-100 font-light text-xl justify-between items-center z-10">
-        <div class="flex flex-col backdrop-blur-sm rounded-xl p-10 space-y-2">
+        <div class="flex flex-col backdrop-blur-sm rounded-xl p-5 md:p-10 space-y-2">
             <a class="cursor-pointer" onclick="switchLanguage('en')">
-                <img src="img/gb.png" class="w-9">
+                <img src="img/gb.png" class="w-7 md:w-9">
             </a>
             <a class="cursor-pointer" onclick="switchLanguage('cz')">
-                <img src="img/cz.png" class="w-9">
+                <img src="img/cz.png" class="w-7 md:w-9">
             </a>
         </div>
     </div>
 
     <div
-        class="flex fixed right-0 lg:top-1/2 lg:-translate-y-1/2 text-neutral-100 font-light text-xl justify-between items-center z-10">
-        <div class="flex flex-col text-right backdrop-blur-sm rounded-xl p-10 space-y-2">
-            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+        class="flex fixed right-0 lg:top-1/2 lg:-translate-y-1/2 text-neutral-100 font-light justify-between items-center z-10">
+        <div class="flex flex-col text-right backdrop-blur-sm rounded-xl p-5 md:p-10 space-y-2">
+            <div
+                class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-xl md:text-2xl">
                 <a id="link_about" href="#about">About</a>
             </div>
-            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+            <div
+                class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-xl md:text-2xl">
                 <a id="link_projects" href="#projects">Projects</a>
             </div>
-            <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-2xl">
+            <div
+                class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent text-xl md:text-2xl">
                 <a id="link_contact" href="#contact">Contact</a>
             </div>
         </div>
@@ -53,7 +56,7 @@
             class="h-[50vh] flex justify-center items-center flex-col bg-none md:bg-[url('./img/background.png')] bg-cover bg-center">
             <div class="drop-shadow-animated h-full justify-center items-center flex flex-col">
                 <div class="bg-gradient-to-r from-teal-400 via-teal-200 to-teal-400 bg-clip-text text-transparent">
-                    <h1 class="text-6xl text-center font-bold">Petr Mičola</h1>
+                    <h1 class="text-5xl md:text-6xl text-center font-bold">Petr Mičola</h1>
                 </div>
                 <p id="subtitle" class="text-neutral-100 text-center text-xl font-light opacity-80">Website developer
                 </p>
@@ -82,9 +85,10 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://rqpower.cz/" target="_blank">
-                    <img src="./img/rqpower-logo.svg">
+                    <img class="max-w-40 md:max-w-none" src="./img/rqpower-logo.svg">
                 </a>
-                <p id="rqpower_description" class="text-neutral-100 text-xl font-light opacity-80">Photovoltaic company
+                <p id="rqpower_description" class="text-neutral-100 text-xl font-light opacity-80 pb-4 md:pb-none">
+                    Photovoltaic company
                     website 🔋</p>
             </div>
             <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-end items-center lg:items-end">
@@ -93,7 +97,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress-logo.svg">
+                    <img class="max-w-36 md:max-w-none" src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -112,9 +116,10 @@
         <div class="flex flex-col lg:flex-row-reverse justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://tevalipno.cz/" target="_blank">
-                    <img src="./img/tevalipno-logo.svg">
+                    <img class="max-w-44 md:max-w-none" src="./img/tevalipno-logo.svg">
                 </a>
-                <p id="tevalipno_description" class="text-neutral-100 text-xl font-light opacity-80">Accomodation
+                <p id="tevalipno_description" class="text-neutral-100 text-xl font-light opacity-80 pb-4 md:pb-none">
+                    Accomodation
                     booking website 🏠</p>
             </div>
             <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-start items-center lg:items-start">
@@ -123,7 +128,7 @@
                 </a>
                 <div class="flex justify-center items-center ml-0 lg:ml-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress-logo.svg">
+                    <img class="max-w-36 md:max-w-none" src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -142,9 +147,10 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://gpasolutions.co.uk/" target="_blank">
-                    <img src="./img/gpasolutions-logo.svg">
+                    <img class="max-w-56 md:max-w-none" src="./img/gpasolutions-logo.svg">
                 </a>
-                <p id="gpasolutions_description" class="text-neutral-100 text-xl font-light opacity-80">Gardening
+                <p id="gpasolutions_description" class="text-neutral-100 text-xl font-light opacity-80 pb-4 md:pb-none">
+                    Gardening
                     company website 🌱</p>
             </div>
             <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-end items-center lg:items-end">
@@ -153,7 +159,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress-logo.svg">
+                    <img class="max-w-36 md:max-w-none" src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -172,9 +178,10 @@
         <div class="flex flex-col lg:flex-row-reverse justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://odborysno.cz/" target="_blank">
-                    <img src="./img/odborysno-logo.svg">
+                    <img class="max-w-32 md:max-w-none" src="./img/odborysno-logo.svg">
                 </a>
-                <p id="odborysno_description" class="text-neutral-100 text-xl font-light opacity-80">Hospital
+                <p id="odborysno_description" class="text-neutral-100 text-xl font-light opacity-80 pb-4 md:pb-none">
+                    Hospital
                     department
                     website 🏥</p>
             </div>
@@ -184,7 +191,7 @@
                 </a>
                 <div class="flex justify-center items-center ml-0 lg:ml-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress-logo.svg">
+                    <img class="max-w-36 md:max-w-none" src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
@@ -203,9 +210,10 @@
         <div class="flex flex-col lg:flex-row justify-center items-center">
             <div class="w-full lg:w-[35%] flex flex-col justify-center items-center drop-shadow-main ">
                 <a href="https://www.hayleyjoneswiresculptures.com/" target="_blank">
-                    <img src="./img/hayleyjones-logo.svg">
+                    <img class="max-w-64 md:max-w-none" src="./img/hayleyjones-logo.svg">
                 </a>
-                <p id="hayleyjones_description" class="text-neutral-100 text-xl font-light opacity-80">Artist portfolio
+                <p id="hayleyjones_description" class="text-neutral-100 text-xl font-light opacity-80 pb-4 md:pb-none">
+                    Artist portfolio
                     website 🎨</p>
             </div>
             <div class="w-full lg:w-[35%] flex flex-col justify-center lg:justify-end items-center lg:items-end">
@@ -214,7 +222,7 @@
                 </a>
                 <div class="flex justify-center items-center mr-0 lg:mr-18">
                     <p class="built_in text-neutral-100 opacity-80 mr-[-5px] mt-[3px]">Built in</p>
-                    <img src="./img/wordpress-logo.svg">
+                    <img class="max-w-36 md:max-w-none" src="./img/wordpress-logo.svg">
                 </div>
             </div>
         </div>
